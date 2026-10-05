@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gemechu Bekele — Frontend Developer Portfolio">
+  <title>Gemechu Bekele</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/30645e2fdd.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+</head>
+<body class="theme-gold  bg-[#F6E2C3]" data-theme="dark">
+  <main class="app-shell">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode" title="Toggle light/dark mode">
+      <span id="theme-icon">☾</span>
+    </button>
+    <button class="palette-toggle" id="palette-toggle" aria-label="Open accent color options" title="Change accent color">◉</button>
+    <div class="palette-panel" id="palette-panel" aria-label="Accent color choices">
+      <span class="palette-title">Accent color</span>
+      <button class="swatch active" data-theme-color="gold" aria-label="Gold accent" title="Gold"></button>
+      <button class="swatch" data-theme-color="blue" aria-label="Blue accent" title="Blue"></button>
+      <button class="swatch" data-theme-color="green" aria-label="Green accent" title="Green"></button>
+      <button class="swatch" data-theme-color="pink" aria-label="Pink accent" title="Pink"></button>
+      <button class="swatch" data-theme-color="purple" aria-label="Purple accent" title="Purple"></button>
+    </div>
+
+    <section class="intro-screen" id="home">
+      <div class="hello-pill">Hello! <span>✦</span></div>
+      <header class="intro-heading">
+        <h1>I'm <span>Gemmechu,</span></h1>
+        <div class="job-titles">
+            <h2 class="text-orange-500">AI Software Engineer</h2>
+            <h2 class="text-cyan-500">AI Powered Mobile Developer</h2>
+            <h2 class="text-slate-600">AI Powered Frontend Developer</h2>
+            <h2 class="text-olive-500">AI Powered Backend Developer</h2>
+            <h2 class="text-pink-700">AI Powered Full Stack Developer</h2>
+        </div>
+      </header>
+      <div class="hero-layout">
+        <blockquote class="quote-card">
+          <span class="quote-mark">❝</span>
+          <p>
+            I'm passionate about creating clean, responsive, and user-friendly
+            web experiences that solve real problems.
+          </p>
+          <cite class="inline-block pb-5 text-base not-italic text-gray-500">Gemmechu Bekele · Developer</cite>
+          <span class="quote-mark bottom">❞</span>
+        </blockquote>
+        <div class="portrait-wrap" aria-label="Gemechu Bekele profile photo">
+          <div class="portrait-backdrop"></div>
+          <img src="./images/Gemmechu.jpg" alt="Gemechu Bekele">
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-action="about">More About Me</button>
+          <button class="btn btn-secondary" data-action="projects">See My Work</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chat-area" aria-live="polite">
+      <div class="section-label" id="section-label">Welcome</div>
+      <div class="chat-window" id="chat-window">
+        <div class="message assistant-message">
+          <div class="chat-avatar">GB</div>
+          <div class="message-content">
+            <p>Hi, I'm <strong>Gemmechu Bekele</strong>, a Software developer learning and building modern web interfaces.</p>
+            <p>Choose a topic below or type <strong>about</strong>, <strong>skills</strong>, <strong>projects</strong>, <strong>clients</strong>, or <strong>contact</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="chat-footer">
+      <form class="input-area" id="chat-form">
+        <input id="chat-input" type="text" placeholder="Search about, skills, or projects..." autocomplete="off" aria-label="Ask about my portfolio">
+        <button class="send-btn" id="send-button" type="submit" aria-label="Send message">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor" class="text-[#C0531A]"><path d="M544 513L397.2 364.2C417.2 336.3 429.1 302 429.1 265C429.1 171.9 354.4 96.1 262.6 96.1C170.7 96 96 171.8 96 264.9C96 358 170.7 433.8 262.5 433.8C302.3 433.8 338.8 419.6 367.5 395.9L513.5 544L544 513zM262.5 394.8C191.9 394.8 134.4 336.5 134.4 264.9C134.4 193.3 191.9 135 262.5 135C333.1 135 390.6 193.3 390.6 264.9C390.6 336.5 333.2 394.8 262.5 394.8z"/></svg>
+        </button>
+      </form>
+      <nav class="primary-nav" aria-label="Portfolio sections">
+        <button data-action="about"><span><i class="fa-solid fa-circle-info"></i></span> About Me</button>
+        <button data-action="skills"><span><i class="fa-solid fa-gear"></i></span> Skills</button>
+        <button data-action="projects"><span><i class="fa-solid fa-layer-group"></i></span> Projects</button>
+        <button data-action="clients"><span><i class="fa-solid fa-users"></i></span> Clients</button>
+        <button data-action="contact"><span><i class="fa-regular fa-envelope"></i></span> Contact</button>
+      </nav>
+    </footer>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
