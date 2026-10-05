@@ -168,6 +168,7 @@ After deployment, add the deployed URL to the **Live Demo** section above.
 The following features may be added in future versions:
 
 * [ ] Add more real-world projects to the portfolio.
+* [ ] I will make AI powered portfolio.
 * [ ] Add project screenshots and live project links.
 * [ ] Improve the chat interface with more natural interactions.
 * [ ] Add additional animations and micro-interactions.
