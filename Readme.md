@@ -64,9 +64,7 @@ The project was built using the following technologies:
 
 You can view the live version of the portfolio here:
 
-* [Live Demo](#)
-
-> Replace `#` with your deployed portfolio URL after deployment.
+* [Live Demo](https://gemmechuportfolioweb.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +87,7 @@ Before running the project, you need:
 Clone this repository to your desired folder:
 
 ```bash
-git clone https://github.com/GemmechuBekele/portfolio.git
+git clone https://github.com/GemmechuBekele/My-Portfolio-Website.git
 ```
 
 Navigate into the project directory:
