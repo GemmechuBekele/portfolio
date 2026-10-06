@@ -9,39 +9,68 @@ const palettePanel = document.querySelector("#palette-panel");
 
 const projects = [
   {
-    title: "ManaKireessaa",
+    title: "Grand Hotel",
+    tag: "Luxury",
+    description:
+      "A modern luxury hotel website designed to showcase elegant rooms, premium services, and a comfortable booking experience for guests.",
+    stack: "HTML · CSS",
+    url: "https://grandhotel-gemmechul.vercel.app/",
+  },
+
+  {
+    title: "Ecommerce App",
+    tag: "StoreBrand",
+    description:
+      "A modern e-commerce application that allows users to browse products, view product details, manage their cart, and enjoy a smooth online shopping experience.",
+    stack: "HTML · Tailwind CSS · Next.js · React · Express.js",
+    url: "https://ecommerce-storebrand.vercel.app/",
+  },
+
+  {
+    title: "Manakireessaa",
     tag: "Rental",
     description:
       "A simple rental marketplace concept that helps people explore houses and apartments, compare details, and connect with listing owners.",
-    stack: "HTML · Tailwind CSS · TypeScript . React . Express JS",
+    stack: "HTML · Tailwind CSS · next js . React . Express JS",
+    url: "#",
   },
+
   {
     title: "Ethiopian Airlines Exam Hub",
     tag: "EAEH",
     description:
       "A responsive Exam hub website concept with a clear layout, attractive department sections, and details Resource.",
     stack: "HTML · CSS · Tailwind CSS . React . Next JS . Postgres",
+    url: "#",
   },
+
   {
     title: "Moggaasa Maqaa",
     tag: "MaqaaAmmayyaa",
     description:
       "A responsive layout Letters, spacing, and mobile-friendly page sections.",
-    stack: "HTML · Tailwind CSS . React JS . TypeScript . Express Js . Bun. Postgres",
+    stack:
+      "HTML · Tailwind CSS . React JS . TypeScript . Express Js . Bun. Postgres",
+    url: "#",
   },
+
   {
     title: "Carraakee Daily Lottery",
     tag: "Carrakee",
     description:
       "A responsive layout Letters, spacing, and mobile-friendly page sections.",
-    stack: "HTML · Tailwind CSS . React JS . TypeScript . Express Js . Bun. Postgres",
+    stack:
+      "HTML · Tailwind CSS . React JS . TypeScript . Express Js . Bun. Postgres",
+    url: "#",
   },
+
   {
     title: "Portfolio Website",
     tag: "PORTFOLIO",
     description:
       "This chat style developer portfolio, including theme controls and interactive topic navigation.",
     stack: "HTML · CSS · Tailwind CSS . JavaScript",
+    url: "https://gemmechuportfolioweb.vercel.app/",
   },
 ];
 
@@ -161,7 +190,9 @@ function showSection(topic) {
         <span class="skill-chip">Figma</span>
         <span class="skill-chip">AI Models</span>
         <span class="skill-chip">RAG</span>
+        <span class="skill-chip">Prompt Eng</span>
         <span class="skill-chip">AI Agents</span>
+        <span class="skill-chip">Vector DB</span>
       </div>`,
     );
     addActions([
@@ -263,12 +294,14 @@ function renderProject() {
     ">
   Project ${projectIndex + 1} of ${projects.length}. Use the button below to explore the next project.</p>
   <div class="project-card">
-    <div class="project-art">${project.tag}</div>
+    <div class="project-art">
+      <a href="${project.url}" target="_blank" rel="noreferrer" aria-label="${project.title}">${project.tag}</a>
+    </div>
     <div class="project-details">
       <h3>${project.title}</h3>
       <p class="info-row">${project.description}</p>
       <p><strong>${project.stack}</strong></p>
-      <button class="inline-action" id="next-project">Next Project <span class="pl-2">❯</span></button>
+      <button class="inline-action" id="next-project">Next Project <span class="pl-2">❯❯</span></button>
     </div>
   </div>`;
   addMessage(html);
@@ -329,13 +362,10 @@ document.querySelectorAll("[data-action]").forEach((button) => {
 themeToggle.addEventListener("click", () => {
   const next = document.body.dataset.theme === "dark" ? "light" : "dark";
 
-  // Your existing theme system
   document.body.dataset.theme = next;
 
-  // Tailwind dark mode
   document.documentElement.classList.toggle("dark", next === "dark");
 
-  // Icon
   themeIcon.textContent = next === "dark" ? "☾" : "☀";
 
   themeToggle.setAttribute(

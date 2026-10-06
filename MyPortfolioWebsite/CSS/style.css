@@ -752,7 +752,7 @@ body.theme-purple {
 /* ===== 15. CONTACT AND SOCIAL LINKS ==== */
 
 .contact-link {
-    border-bottom: 1px dashed var(--accent);
+    /* border-bottom: 1px dashed var(--accent); */
 
     color: var(--text);
     text-decoration: none;
