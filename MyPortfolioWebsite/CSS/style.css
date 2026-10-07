@@ -1,5 +1,5 @@
 
-/* === 1. CSS VARIABLES AND DEFAULT THEME === */
+/* CSS VARIABLES AND DEFAULT THEME */
 
 :root {
     color-scheme: dark;
@@ -43,7 +43,7 @@ button {
     cursor: pointer;
 }
 
-/* ==== 2. LIGHT MODE ==== */
+/* LIGHT MODE */
 
 body[data-theme="light"] {
     color-scheme: light;
@@ -61,7 +61,7 @@ body[data-theme="light"] {
     --shadow: 0 20px 55px rgba(0, 0, 0, 0.08);
 }
 
-/* === 3. ACCENT COLORS ==== */
+/*  ACCENT COLORS  */
 
 body.theme-gold {
     --accent: #ffb800;
@@ -88,7 +88,7 @@ body.theme-purple {
     --accent-rgb: 173, 135, 255;
 }
 
-/* ===== 4. MAIN CONTAINER ===== */
+/* MAIN CONTAINER  */
 
 .app-shell {
     position: relative;
@@ -100,7 +100,7 @@ body.theme-purple {
     padding: 24px 0 20px;
 }
 
-/* ==== 5. THEME AND COLOR BUTTONS ==== */
+/* THEME AND COLOR BUTTONS */
 
 .theme-toggle,
 .palette-toggle {
@@ -187,7 +187,7 @@ body.theme-purple {
     --swatch: #ad87ff;
 }
 
-/* ==== 6. INTRODUCTION ==== */
+/* INTRODUCTION  */
 
 .intro-screen {
     padding: 4px 0 14px;
@@ -344,7 +344,7 @@ body.theme-purple {
     font-style: normal;
 }
 
-/* ===== 8. PROFILE IMAGE AND YELLOW ARCH ==== */
+/* PROFILE IMAGE AND YELLOW ARCH */
 
 .portrait-wrap {
     position: relative;
@@ -414,7 +414,7 @@ body.theme-purple {
     opacity: 0.7;
 }
 
-/* ==== 9. HERO BUTTONS ===== */
+/* HERO BUTTONS */
 
 .hero-actions {
     display: flex;
@@ -452,7 +452,7 @@ body.theme-purple {
     color: var(--accent);
 }
 
-/* ===== 10. CHAT AREA ===== */
+/* CHAT AREA */
 
 .chat-area {
     flex: 1;
@@ -545,7 +545,7 @@ body.theme-purple {
     margin: 5px 0;
 }
 
-/* ===== 11. SKILLS ======= */
+/* SKILLS */
 
 .skill-line {
     display: flex;
@@ -563,7 +563,7 @@ body.theme-purple {
     font-size: 14px;
 }
 
-/* ==== 12. PROJECTS ===== */
+/* PROJECTS */
 
 .project-card {
     display: grid;
@@ -616,7 +616,7 @@ body.theme-purple {
     font-weight: 700;
 }
 
-/* ====== 13. SECTION ACTION BUTTONS ===== */
+/* SECTION ACTION BUTTONS */
 
 .options-row {
     display: flex;
@@ -640,7 +640,7 @@ body.theme-purple {
     color: var(--accent);
 }
 
-/* ===== 14. CLIENTS ====== */
+/* CLIENTS */
 
 .client-grid {
     display: grid;
@@ -661,7 +661,7 @@ body.theme-purple {
     font-weight: 800;
 }
 
-/* ===== 15. CONTACT AND SOCIAL LINKS ==== */
+/* CONTACT AND SOCIAL LINKS */
 
 .contact-link {
     color: var(--text);
@@ -801,7 +801,7 @@ body.theme-purple {
     transform: translateY(-3px);
 }
 
-/* ===== 16. CHAT FOOTER AND INPUT ===== */
+/* 16. CHAT FOOTER AND INPUT */
 
 .chat-footer {
     position: sticky;
@@ -854,7 +854,7 @@ body.theme-purple {
     font-weight: 800;
 }
 
-/* ===== 17. NAVIGATION ===== */
+/*17. NAVIGATION */
 
 .primary-nav {
     display: flex;
@@ -898,7 +898,7 @@ body.theme-purple {
     font-size: 10px;
 }
 
-/* ===== 18. TABLET AND DESKTOP ===== */
+/* TABLET AND DESKTOP */
 
 @media (min-width: 900px) {
     .app-shell {
@@ -910,7 +910,7 @@ body.theme-purple {
     }
 }
 
-/* ==== 19. RESPONSIVE MOBILE DESIGN ==== */
+/* RESPONSIVE MOBILE DESIGN */
 
 @media (max-width: 700px) {
     .app-shell {
@@ -976,7 +976,6 @@ body.theme-purple {
     .chat-area {
         margin-top: 14px;
     }
-
     .chat-footer {
         padding: 12px 12px 9px;
         border-radius: 22px;
@@ -994,15 +993,12 @@ body.theme-purple {
     .project-card {
         grid-template-columns: 1fr;
     }
-
     .project-art {
         min-height: 120px;
     }
-
     .client-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
     .options-row {
         margin: 0 auto;
     }
@@ -1011,13 +1007,12 @@ body.theme-purple {
     }
 }
 
-/* ===20. SMALL MOBILE SCREENS==== */
+/* SMALL MOBILE SCREENS */
 
 @media (max-width: 390px) {
     .app-shell {
         width: calc(100% - 18px);
     }
-
     .theme-toggle,
     .palette-toggle {
         top: 12px;
@@ -1025,50 +1020,39 @@ body.theme-purple {
         width: 38px;
         height: 38px;
     }
-
     .theme-toggle {
         right: 10px;
     }
-
     .palette-toggle {
         right: 56px;
     }
-
     .palette-panel {
         top: 58px;
         right: 10px;
         gap: 7px;
     }
-
     .palette-title {
         display: none;
     }
-
     .hero-layout {
         gap: 10px;
     }
-
     .portrait-wrap {
         height: 190px;
     }
-
     .portrait-placeholder {
         width: 130px;
     }
-
     .hero-actions .btn {
         padding: 10px 9px;
         font-size: 10px;
     }
-
     .primary-nav button {
         flex: 1 1 auto;
     }
-
     .footer-hint {
         font-size: 9px;
     }
-
     .options-row button{
         font-size: 8px;
     }
